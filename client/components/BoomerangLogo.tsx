@@ -144,21 +144,20 @@ export const getBoomerangLogoSVG = (theme: 'light' | 'dark' = 'light', size: num
 
   return `
     <svg viewBox="0 0 40 40" width="${size}" height="${size}" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 22 Q12 16, 6 14 Q4 13, 5 11 Q6 9, 8 10 Q14 12, 20 18" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M20 22 Q28 16, 34 14 Q36 13, 35 11 Q34 9, 32 10 Q26 12, 20 18" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="20" cy="20" r="3" fill="${primaryColor}"/>
-      <circle cx="11" cy="13" r="1.2" fill="white" fill-opacity="0.95"/>
-      <circle cx="15" cy="15" r="0.9" fill="white" fill-opacity="0.9"/>
-      <circle cx="18" cy="17" r="1.1" fill="white" fill-opacity="0.95"/>
-      <circle cx="29" cy="13" r="1.2" fill="white" fill-opacity="0.95"/>
-      <circle cx="25" cy="15" r="0.9" fill="white" fill-opacity="0.9"/>
-      <circle cx="22" cy="17" r="1.1" fill="white" fill-opacity="0.95"/>
-      <path d="M9 14 L13 12 M16 16 L17 15" stroke="white" stroke-width="1.2" stroke-opacity="0.8" stroke-linecap="round"/>
-      <path d="M31 14 L27 12 M24 16 L23 15" stroke="white" stroke-width="1.2" stroke-opacity="0.8" stroke-linecap="round"/>
-      <circle cx="12" cy="14.5" r="0.4" fill="${accentColor}" fill-opacity="0.9"/>
-      <circle cx="16.5" cy="16.5" r="0.4" fill="${accentColor}" fill-opacity="0.9"/>
-      <circle cx="28" cy="14.5" r="0.4" fill="${accentColor}" fill-opacity="0.9"/>
-      <circle cx="23.5" cy="16.5" r="0.4" fill="${accentColor}" fill-opacity="0.9"/>
+      <path d="M20 26 Q16 20, 12 12 Q11 8, 9 8 Q7 8, 8 10 Q10 14, 18 24" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20 26 Q24 20, 28 12 Q29 8, 31 8 Q33 8, 32 10 Q30 14, 22 24" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="13" cy="16" r="1" fill="white" fill-opacity="0.9"/>
+      <circle cx="15" cy="20" r="0.8" fill="white" fill-opacity="0.8"/>
+      <circle cx="17" cy="23" r="0.9" fill="white" fill-opacity="0.9"/>
+      <circle cx="27" cy="16" r="1" fill="white" fill-opacity="0.9"/>
+      <circle cx="25" cy="20" r="0.8" fill="white" fill-opacity="0.8"/>
+      <circle cx="23" cy="23" r="0.9" fill="white" fill-opacity="0.9"/>
+      <path d="M11 14 L14 18 M16 21 L18 22" stroke="white" stroke-width="1" stroke-opacity="0.7" stroke-linecap="round"/>
+      <path d="M29 14 L26 18 M24 21 L22 22" stroke="white" stroke-width="1" stroke-opacity="0.7" stroke-linecap="round"/>
+      <circle cx="14" cy="18" r="0.3" fill="${accentColor}" fill-opacity="0.8"/>
+      <circle cx="16" cy="21.5" r="0.3" fill="${accentColor}" fill-opacity="0.8"/>
+      <circle cx="26" cy="18" r="0.3" fill="${accentColor}" fill-opacity="0.8"/>
+      <circle cx="24" cy="21.5" r="0.3" fill="${accentColor}" fill-opacity="0.8"/>
     </svg>
   `;
 };
