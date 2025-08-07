@@ -31,9 +31,9 @@ const BoomerangLogo: React.FC<BoomerangLogoProps> = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Traditional V-shaped boomerang - Left arm (70 degree angle, opening upward) */}
+      {/* Authentic curved boomerang - Left arm (smooth upward curve like reference) */}
       <path
-        d="M20 26 Q16 20, 12 12 Q11 8, 9 8 Q7 8, 8 10 Q10 14, 18 24"
+        d="M20 30 Q14 26, 10 20 Q8 14, 6 10 Q5 8, 4 8 Q2 8, 3 10 Q5 16, 12 24 Q16 28, 20 30"
         fill={primaryColor}
         stroke={primaryColor}
         strokeWidth="0.5"
@@ -41,9 +41,9 @@ const BoomerangLogo: React.FC<BoomerangLogoProps> = ({
         strokeLinejoin="round"
       />
 
-      {/* Traditional V-shaped boomerang - Right arm */}
+      {/* Authentic curved boomerang - Right arm (smooth upward curve) */}
       <path
-        d="M20 26 Q24 20, 28 12 Q29 8, 31 8 Q33 8, 32 10 Q30 14, 22 24"
+        d="M20 30 Q26 26, 30 20 Q32 14, 34 10 Q35 8, 36 8 Q38 8, 37 10 Q35 16, 28 24 Q24 28, 20 30"
         fill={primaryColor}
         stroke={primaryColor}
         strokeWidth="0.5"
@@ -51,38 +51,30 @@ const BoomerangLogo: React.FC<BoomerangLogoProps> = ({
         strokeLinejoin="round"
       />
 
-      {/* Aboriginal dot painting - Left arm */}
-      <circle cx="13" cy="16" r="1" fill="white" fillOpacity="0.9" />
-      <circle cx="15" cy="20" r="0.8" fill="white" fillOpacity="0.8" />
-      <circle cx="17" cy="23" r="0.9" fill="white" fillOpacity="0.9" />
+      {/* Aboriginal dot painting patterns - Left arm (red/yellow style like reference) */}
+      <circle cx="8" cy="15" r="1.2" fill="#DC2626" fillOpacity="0.9" />
+      <circle cx="10" cy="18" r="0.8" fill="#FBBF24" fillOpacity="0.9" />
+      <circle cx="12" cy="21" r="1" fill="white" fillOpacity="0.9" />
+      <circle cx="14" cy="24" r="0.9" fill="#DC2626" fillOpacity="0.9" />
+      <circle cx="16" cy="26" r="0.7" fill="#FBBF24" fillOpacity="0.9" />
 
-      {/* Aboriginal dot painting - Right arm */}
-      <circle cx="27" cy="16" r="1" fill="white" fillOpacity="0.9" />
-      <circle cx="25" cy="20" r="0.8" fill="white" fillOpacity="0.8" />
-      <circle cx="23" cy="23" r="0.9" fill="white" fillOpacity="0.9" />
+      {/* Aboriginal dot painting patterns - Right arm */}
+      <circle cx="32" cy="15" r="1.2" fill="#DC2626" fillOpacity="0.9" />
+      <circle cx="30" cy="18" r="0.8" fill="#FBBF24" fillOpacity="0.9" />
+      <circle cx="28" cy="21" r="1" fill="white" fillOpacity="0.9" />
+      <circle cx="26" cy="24" r="0.9" fill="#DC2626" fillOpacity="0.9" />
+      <circle cx="24" cy="26" r="0.7" fill="#FBBF24" fillOpacity="0.9" />
 
-      {/* Traditional Aboriginal line patterns */}
-      <path
-        d="M11 14 L14 18 M16 21 L18 22"
-        stroke="white"
-        strokeWidth="1"
-        strokeOpacity="0.7"
-        strokeLinecap="round"
-      />
+      {/* Traditional Aboriginal connecting dots */}
+      <circle cx="9" cy="16.5" r="0.4" fill="white" fillOpacity="0.8" />
+      <circle cx="11" cy="19.5" r="0.4" fill="#DC2626" fillOpacity="0.8" />
+      <circle cx="13" cy="22.5" r="0.4" fill="white" fillOpacity="0.8" />
+      <circle cx="15" cy="25" r="0.4" fill="#FBBF24" fillOpacity="0.8" />
 
-      <path
-        d="M29 14 L26 18 M24 21 L22 22"
-        stroke="white"
-        strokeWidth="1"
-        strokeOpacity="0.7"
-        strokeLinecap="round"
-      />
-
-      {/* Small accent dots for visual appeal */}
-      <circle cx="14" cy="18" r="0.3" fill={accentColor} fillOpacity="0.8" />
-      <circle cx="16" cy="21.5" r="0.3" fill={accentColor} fillOpacity="0.8" />
-      <circle cx="26" cy="18" r="0.3" fill={accentColor} fillOpacity="0.8" />
-      <circle cx="24" cy="21.5" r="0.3" fill={accentColor} fillOpacity="0.8" />
+      <circle cx="31" cy="16.5" r="0.4" fill="white" fillOpacity="0.8" />
+      <circle cx="29" cy="19.5" r="0.4" fill="#DC2626" fillOpacity="0.8" />
+      <circle cx="27" cy="22.5" r="0.4" fill="white" fillOpacity="0.8" />
+      <circle cx="25" cy="25" r="0.4" fill="#FBBF24" fillOpacity="0.8" />
     </svg>
   );
 
