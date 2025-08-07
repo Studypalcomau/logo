@@ -31,46 +31,48 @@ const BoomerangLogo: React.FC<BoomerangLogoProps> = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Clean boomerang shape - classic V shape */}
+      {/* Authentic Australian boomerang - traditional bent stick shape */}
       <path
-        d="M8 14 Q12 10, 18 12 Q22 14, 20 20 Q18 26, 12 28 Q8 30, 6 26 Q8 22, 12 20 Q16 18, 18 16 Q16 14, 12 16 Q10 18, 8 14 Z"
+        d="M8 20 L18 12 Q20 11, 22 12 L32 8 Q34 7, 36 9 Q37 11, 35 13 L25 17 Q23 18, 22 20 Q21 22, 23 23 L33 27 Q35 28, 34 30 Q32 32, 30 31 L20 27 Q18 26, 18 24 L8 32 Q6 33, 5 31 Q4 29, 6 28 L16 20 Q18 18, 18 16 Q18 14, 16 14 Q14 14, 12 16 L8 20 Z"
         fill={primaryColor}
         stroke={primaryColor}
-        strokeWidth="1"
+        strokeWidth="0.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
-      {/* Second arm of boomerang */}
+      {/* Wood grain detail */}
       <path
-        d="M26 8 Q30 6, 34 12 Q36 16, 32 20 Q28 22, 22 20 Q18 18, 20 14 Q22 10, 26 8 Z"
-        fill={primaryColor}
-        stroke={primaryColor}
-        strokeWidth="1"
+        d="M10 22 Q15 16, 20 18 Q25 20, 30 16"
+        stroke="white"
+        strokeWidth="0.8"
+        strokeOpacity="0.3"
         strokeLinecap="round"
-        strokeLinejoin="round"
+        fill="none"
+      />
+      <path
+        d="M12 26 Q17 20, 22 22 Q27 24, 32 20"
+        stroke="white"
+        strokeWidth="0.6"
+        strokeOpacity="0.2"
+        strokeLinecap="round"
+        fill="none"
       />
 
-      {/* Subtle highlight on boomerang arms */}
+      {/* Motion arc showing return path */}
       <path
-        d="M10 16 Q14 14, 16 18"
-        stroke="white"
-        strokeWidth="1"
-        strokeOpacity="0.6"
+        d="M35 10 Q28 4, 20 8 Q12 12, 8 20 Q6 28, 12 32"
+        stroke={accentColor}
+        strokeWidth="1.5"
+        strokeOpacity="0.4"
         strokeLinecap="round"
-      />
-      <path
-        d="M28 12 Q30 10, 32 14"
-        stroke="white"
-        strokeWidth="1"
-        strokeOpacity="0.6"
-        strokeLinecap="round"
+        fill="none"
+        strokeDasharray="2 3"
       />
 
-      {/* Motion trail dots */}
-      <circle cx="14" cy="24" r="1.5" fill={accentColor} fillOpacity="0.4" />
-      <circle cx="26" cy="26" r="1" fill={accentColor} fillOpacity="0.6" />
-      <circle cx="30" cy="22" r="0.8" fill={accentColor} fillOpacity="0.8" />
+      {/* Small motion dots */}
+      <circle cx="32" cy="12" r="1" fill={accentColor} fillOpacity="0.6" />
+      <circle cx="28" cy="8" r="0.8" fill={accentColor} fillOpacity="0.8" />
     </svg>
   );
 
