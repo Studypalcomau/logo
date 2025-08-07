@@ -292,9 +292,9 @@ const BoomerangShowcase: React.FC = () => {
               <h3 className="font-medium mb-2">Formats</h3>
               <div className="space-y-1 text-sm">
                 <div>• React Component (.tsx)</div>
-                <div>• SVG (scalable vector)</div>
-                <div>• Inline SVG string</div>
-                <div>• Export functions included</div>
+                <div>• WebP Image (high quality)</div>
+                <div>• Direct image URL</div>
+                <div>• CSS filter transformations</div>
               </div>
             </div>
 
