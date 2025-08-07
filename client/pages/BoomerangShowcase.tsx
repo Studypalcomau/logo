@@ -217,28 +217,28 @@ const BoomerangShowcase: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <button
               onClick={() =>
-                downloadSVG(
-                  getBoomerangLogoSVG("light", 200),
-                  "boomerang-study-logo-light.svg",
+                downloadImage(
+                  getBoomerangImageURL(),
+                  "boomerang-study-logo.webp",
                 )
               }
               className="p-4 border rounded-lg hover:bg-gray-50 transition-colors text-center"
             >
-              <div className="text-sm font-medium">Light SVG</div>
-              <div className="text-xs text-gray-500 mt-1">200px</div>
+              <div className="text-sm font-medium">Boomerang Image</div>
+              <div className="text-xs text-gray-500 mt-1">WebP format</div>
             </button>
 
             <button
               onClick={() =>
-                downloadSVG(
-                  getBoomerangLogoSVG("dark", 200),
-                  "boomerang-study-logo-dark.svg",
+                downloadImage(
+                  getBoomerangImageURL(),
+                  "boomerang-study-logo-large.webp",
                 )
               }
               className="p-4 border rounded-lg hover:bg-gray-50 transition-colors text-center"
             >
-              <div className="text-sm font-medium">Dark SVG</div>
-              <div className="text-xs text-gray-500 mt-1">200px</div>
+              <div className="text-sm font-medium">Large Image</div>
+              <div className="text-xs text-gray-500 mt-1">800px width</div>
             </button>
 
             <button
