@@ -254,11 +254,11 @@ const BoomerangShowcase: React.FC = () => {
             </button>
 
             <button
-              onClick={() => copyToClipboard(getBoomerangLogoSVG("light", 40))}
+              onClick={() => copyToClipboard(getBoomerangImageURL())}
               className="p-4 border rounded-lg hover:bg-gray-50 transition-colors text-center"
             >
-              <div className="text-sm font-medium">Copy SVG</div>
-              <div className="text-xs text-gray-500 mt-1">Raw code</div>
+              <div className="text-sm font-medium">Copy Image URL</div>
+              <div className="text-xs text-gray-500 mt-1">Direct link</div>
             </button>
           </div>
         </div>
