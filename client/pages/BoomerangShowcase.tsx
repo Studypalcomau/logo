@@ -3,6 +3,7 @@ import BoomerangLogo, {
   BoomerangIcon,
   BoomerangText,
   getBoomerangLogoSVG,
+  getBoomerangImageURL,
 } from "../components/BoomerangLogo";
 
 const BoomerangShowcase: React.FC = () => {
