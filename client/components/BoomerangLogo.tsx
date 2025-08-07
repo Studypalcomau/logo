@@ -29,6 +29,9 @@ const BoomerangLogo: React.FC<BoomerangLogoProps> = ({
       src="https://cdn.builder.io/api/v1/image/assets%2Fdd7cf42c421a43aeaebe1762f190d508%2F9322846fc88647689b814181a06af82a?format=webp&width=800"
       alt="Boomerang"
       className={`${sizeClasses[size]} w-auto object-contain`}
+      style={{
+        filter: 'hue-rotate(180deg) saturate(1.2) brightness(1.1)',
+      }}
     />
   );
 
