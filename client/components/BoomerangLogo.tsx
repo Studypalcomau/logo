@@ -31,77 +31,46 @@ const BoomerangLogo: React.FC<BoomerangLogoProps> = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Boomerang shape */}
+      {/* Clean boomerang shape - classic V shape */}
       <path
-        d="M8 20 C8 12, 12 8, 20 8 C28 8, 32 12, 32 20 C28 16, 24 16, 20 20 C16 24, 16 28, 20 32 C12 32, 8 28, 8 20 Z"
+        d="M8 14 Q12 10, 18 12 Q22 14, 20 20 Q18 26, 12 28 Q8 30, 6 26 Q8 22, 12 20 Q16 18, 18 16 Q16 14, 12 16 Q10 18, 8 14 Z"
         fill={primaryColor}
-        fillOpacity="0.1"
         stroke={primaryColor}
-        strokeWidth="2"
+        strokeWidth="1"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      
-      {/* Inner boomerang detail */}
+
+      {/* Second arm of boomerang */}
       <path
-        d="M12 20 C12 14, 14 12, 20 12 C26 12, 28 14, 28 20 C26 18, 24 18, 20 20 C18 22, 18 24, 20 28 C14 28, 12 26, 12 20 Z"
-        fill={accentColor}
-        fillOpacity="0.3"
-      />
-      
-      {/* Motion lines suggesting return/movement */}
-      <path
-        d="M6 16 L10 18"
-        stroke={accentColor}
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <path
-        d="M30 22 L34 24"
-        stroke={accentColor}
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <path
-        d="M22 6 L24 10"
-        stroke={accentColor}
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      
-      {/* Study element - small book/knowledge symbol */}
-      <circle
-        cx="20"
-        cy="20"
-        r="3"
+        d="M26 8 Q30 6, 34 12 Q36 16, 32 20 Q28 22, 22 20 Q18 18, 20 14 Q22 10, 26 8 Z"
         fill={primaryColor}
-        fillOpacity="0.8"
-      />
-      <rect
-        x="18.5"
-        y="18.5"
-        width="3"
-        height="3"
-        rx="0.5"
-        fill="white"
-        fillOpacity="0.9"
-      />
-      <line
-        x1="19"
-        y1="19.5"
-        x2="21"
-        y2="19.5"
         stroke={primaryColor}
-        strokeWidth="0.5"
+        strokeWidth="1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <line
-        x1="19"
-        y1="20.5"
-        x2="20.5"
-        y2="20.5"
-        stroke={primaryColor}
-        strokeWidth="0.5"
+
+      {/* Subtle highlight on boomerang arms */}
+      <path
+        d="M10 16 Q14 14, 16 18"
+        stroke="white"
+        strokeWidth="1"
+        strokeOpacity="0.6"
+        strokeLinecap="round"
       />
+      <path
+        d="M28 12 Q30 10, 32 14"
+        stroke="white"
+        strokeWidth="1"
+        strokeOpacity="0.6"
+        strokeLinecap="round"
+      />
+
+      {/* Motion trail dots */}
+      <circle cx="14" cy="24" r="1.5" fill={accentColor} fillOpacity="0.4" />
+      <circle cx="26" cy="26" r="1" fill={accentColor} fillOpacity="0.6" />
+      <circle cx="30" cy="22" r="0.8" fill={accentColor} fillOpacity="0.8" />
     </svg>
   );
 
