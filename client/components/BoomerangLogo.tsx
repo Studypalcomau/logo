@@ -31,48 +31,48 @@ const BoomerangLogo: React.FC<BoomerangLogoProps> = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Authentic Australian boomerang - traditional bent stick shape */}
+      {/* Traditional Australian boomerang - curved stick shape */}
       <path
-        d="M8 20 L18 12 Q20 11, 22 12 L32 8 Q34 7, 36 9 Q37 11, 35 13 L25 17 Q23 18, 22 20 Q21 22, 23 23 L33 27 Q35 28, 34 30 Q32 32, 30 31 L20 27 Q18 26, 18 24 L8 32 Q6 33, 5 31 Q4 29, 6 28 L16 20 Q18 18, 18 16 Q18 14, 16 14 Q14 14, 12 16 L8 20 Z"
-        fill={primaryColor}
+        d="M6 22 Q12 16, 20 18 Q28 20, 34 14"
         stroke={primaryColor}
-        strokeWidth="0.5"
+        strokeWidth="4"
         strokeLinecap="round"
-        strokeLinejoin="round"
+        fill="none"
       />
 
-      {/* Wood grain detail */}
+      {/* Aboriginal dot painting patterns */}
+      <circle cx="10" cy="20" r="1.2" fill="white" fillOpacity="0.9" />
+      <circle cx="14" cy="18.5" r="0.8" fill="white" fillOpacity="0.8" />
+      <circle cx="18" cy="18" r="1" fill="white" fillOpacity="0.9" />
+      <circle cx="22" cy="18.5" r="0.8" fill="white" fillOpacity="0.8" />
+      <circle cx="26" cy="18" r="1.2" fill="white" fillOpacity="0.9" />
+      <circle cx="30" cy="16.5" r="0.8" fill="white" fillOpacity="0.8" />
+
+      {/* Traditional line patterns */}
       <path
-        d="M10 22 Q15 16, 20 18 Q25 20, 30 16"
+        d="M8 21 L12 19 M16 18.5 L20 18.5 M24 18.5 L28 17"
         stroke="white"
         strokeWidth="0.8"
+        strokeOpacity="0.7"
+        strokeLinecap="round"
+      />
+
+      {/* Small decorative dots */}
+      <circle cx="11" cy="18" r="0.4" fill={accentColor} fillOpacity="0.8" />
+      <circle cx="17" cy="16.5" r="0.4" fill={accentColor} fillOpacity="0.8" />
+      <circle cx="23" cy="16.5" r="0.4" fill={accentColor} fillOpacity="0.8" />
+      <circle cx="29" cy="15" r="0.4" fill={accentColor} fillOpacity="0.8" />
+
+      {/* Motion trail showing return flight */}
+      <path
+        d="M32 16 Q28 12, 22 14 Q16 16, 12 20"
+        stroke={accentColor}
+        strokeWidth="1"
         strokeOpacity="0.3"
         strokeLinecap="round"
         fill="none"
+        strokeDasharray="1 2"
       />
-      <path
-        d="M12 26 Q17 20, 22 22 Q27 24, 32 20"
-        stroke="white"
-        strokeWidth="0.6"
-        strokeOpacity="0.2"
-        strokeLinecap="round"
-        fill="none"
-      />
-
-      {/* Motion arc showing return path */}
-      <path
-        d="M35 10 Q28 4, 20 8 Q12 12, 8 20 Q6 28, 12 32"
-        stroke={accentColor}
-        strokeWidth="1.5"
-        strokeOpacity="0.4"
-        strokeLinecap="round"
-        fill="none"
-        strokeDasharray="2 3"
-      />
-
-      {/* Small motion dots */}
-      <circle cx="32" cy="12" r="1" fill={accentColor} fillOpacity="0.6" />
-      <circle cx="28" cy="8" r="0.8" fill={accentColor} fillOpacity="0.8" />
     </svg>
   );
 
