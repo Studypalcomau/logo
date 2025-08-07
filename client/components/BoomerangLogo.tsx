@@ -136,20 +136,26 @@ export const getBoomerangLogoSVG = (theme: 'light' | 'dark' = 'light', size: num
 
   return `
     <svg viewBox="0 0 40 40" width="${size}" height="${size}" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 26 Q16 20, 12 12 Q11 8, 9 8 Q7 8, 8 10 Q10 14, 18 24" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M20 26 Q24 20, 28 12 Q29 8, 31 8 Q33 8, 32 10 Q30 14, 22 24" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="13" cy="16" r="1" fill="white" fill-opacity="0.9"/>
-      <circle cx="15" cy="20" r="0.8" fill="white" fill-opacity="0.8"/>
-      <circle cx="17" cy="23" r="0.9" fill="white" fill-opacity="0.9"/>
-      <circle cx="27" cy="16" r="1" fill="white" fill-opacity="0.9"/>
-      <circle cx="25" cy="20" r="0.8" fill="white" fill-opacity="0.8"/>
-      <circle cx="23" cy="23" r="0.9" fill="white" fill-opacity="0.9"/>
-      <path d="M11 14 L14 18 M16 21 L18 22" stroke="white" stroke-width="1" stroke-opacity="0.7" stroke-linecap="round"/>
-      <path d="M29 14 L26 18 M24 21 L22 22" stroke="white" stroke-width="1" stroke-opacity="0.7" stroke-linecap="round"/>
-      <circle cx="14" cy="18" r="0.3" fill="${accentColor}" fill-opacity="0.8"/>
-      <circle cx="16" cy="21.5" r="0.3" fill="${accentColor}" fill-opacity="0.8"/>
-      <circle cx="26" cy="18" r="0.3" fill="${accentColor}" fill-opacity="0.8"/>
-      <circle cx="24" cy="21.5" r="0.3" fill="${accentColor}" fill-opacity="0.8"/>
+      <path d="M20 30 Q14 26, 10 20 Q8 14, 6 10 Q5 8, 4 8 Q2 8, 3 10 Q5 16, 12 24 Q16 28, 20 30" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20 30 Q26 26, 30 20 Q32 14, 34 10 Q35 8, 36 8 Q38 8, 37 10 Q35 16, 28 24 Q24 28, 20 30" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="8" cy="15" r="1.2" fill="#DC2626" fill-opacity="0.9"/>
+      <circle cx="10" cy="18" r="0.8" fill="#FBBF24" fill-opacity="0.9"/>
+      <circle cx="12" cy="21" r="1" fill="white" fill-opacity="0.9"/>
+      <circle cx="14" cy="24" r="0.9" fill="#DC2626" fill-opacity="0.9"/>
+      <circle cx="16" cy="26" r="0.7" fill="#FBBF24" fill-opacity="0.9"/>
+      <circle cx="32" cy="15" r="1.2" fill="#DC2626" fill-opacity="0.9"/>
+      <circle cx="30" cy="18" r="0.8" fill="#FBBF24" fill-opacity="0.9"/>
+      <circle cx="28" cy="21" r="1" fill="white" fill-opacity="0.9"/>
+      <circle cx="26" cy="24" r="0.9" fill="#DC2626" fill-opacity="0.9"/>
+      <circle cx="24" cy="26" r="0.7" fill="#FBBF24" fill-opacity="0.9"/>
+      <circle cx="9" cy="16.5" r="0.4" fill="white" fill-opacity="0.8"/>
+      <circle cx="11" cy="19.5" r="0.4" fill="#DC2626" fill-opacity="0.8"/>
+      <circle cx="13" cy="22.5" r="0.4" fill="white" fill-opacity="0.8"/>
+      <circle cx="15" cy="25" r="0.4" fill="#FBBF24" fill-opacity="0.8"/>
+      <circle cx="31" cy="16.5" r="0.4" fill="white" fill-opacity="0.8"/>
+      <circle cx="29" cy="19.5" r="0.4" fill="#DC2626" fill-opacity="0.8"/>
+      <circle cx="27" cy="22.5" r="0.4" fill="white" fill-opacity="0.8"/>
+      <circle cx="25" cy="25" r="0.4" fill="#FBBF24" fill-opacity="0.8"/>
     </svg>
   `;
 };
