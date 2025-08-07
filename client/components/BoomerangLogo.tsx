@@ -31,69 +31,66 @@ const BoomerangLogo: React.FC<BoomerangLogoProps> = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Authentic Australian boomerang - V shape with two arms */}
-      {/* Left arm */}
+      {/* Bold boomerang with gentle curves - Left arm */}
       <path
-        d="M20 20 L8 12"
+        d="M20 22 Q12 16, 6 14 Q4 13, 5 11 Q6 9, 8 10 Q14 12, 20 18"
+        fill={primaryColor}
         stroke={primaryColor}
-        strokeWidth="3.5"
-        strokeLinecap="round"
-        fill="none"
-      />
-
-      {/* Right arm */}
-      <path
-        d="M20 20 L32 8"
-        stroke={primaryColor}
-        strokeWidth="3.5"
-        strokeLinecap="round"
-        fill="none"
-      />
-
-      {/* Aboriginal dot painting on left arm */}
-      <circle cx="11" cy="14" r="1" fill="white" fillOpacity="0.9" />
-      <circle cx="14" cy="16" r="0.7" fill="white" fillOpacity="0.8" />
-      <circle cx="17" cy="18" r="0.9" fill="white" fillOpacity="0.9" />
-
-      {/* Aboriginal dot painting on right arm */}
-      <circle cx="29" cy="10" r="1" fill="white" fillOpacity="0.9" />
-      <circle cx="26" cy="12" r="0.7" fill="white" fillOpacity="0.8" />
-      <circle cx="23" cy="14" r="0.9" fill="white" fillOpacity="0.9" />
-
-      {/* Traditional line patterns on left arm */}
-      <path
-        d="M10 15 L12 13 M15 17 L16 16"
-        stroke="white"
-        strokeWidth="0.8"
-        strokeOpacity="0.6"
-        strokeLinecap="round"
-      />
-
-      {/* Traditional line patterns on right arm */}
-      <path
-        d="M28 11 L30 9 M25 13 L24 14"
-        stroke="white"
-        strokeWidth="0.8"
-        strokeOpacity="0.6"
-        strokeLinecap="round"
-      />
-
-      {/* Small accent dots */}
-      <circle cx="12" cy="15.5" r="0.3" fill={accentColor} fillOpacity="0.8" />
-      <circle cx="15.5" cy="17.5" r="0.3" fill={accentColor} fillOpacity="0.8" />
-      <circle cx="27" cy="11.5" r="0.3" fill={accentColor} fillOpacity="0.8" />
-      <circle cx="24.5" cy="13.5" r="0.3" fill={accentColor} fillOpacity="0.8" />
-
-      {/* Motion trail showing boomerang return path */}
-      <path
-        d="M30 10 Q35 15, 30 25 Q20 30, 10 25"
-        stroke={accentColor}
         strokeWidth="1"
-        strokeOpacity="0.3"
         strokeLinecap="round"
-        fill="none"
-        strokeDasharray="1 2"
+        strokeLinejoin="round"
       />
+
+      {/* Bold boomerang with gentle curves - Right arm */}
+      <path
+        d="M20 22 Q28 16, 34 14 Q36 13, 35 11 Q34 9, 32 10 Q26 12, 20 18"
+        fill={primaryColor}
+        stroke={primaryColor}
+        strokeWidth="1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      {/* Smooth connection at center */}
+      <circle
+        cx="20"
+        cy="20"
+        r="3"
+        fill={primaryColor}
+      />
+
+      {/* Bold Aboriginal dot patterns - Left arm */}
+      <circle cx="11" cy="13" r="1.2" fill="white" fillOpacity="0.95" />
+      <circle cx="15" cy="15" r="0.9" fill="white" fillOpacity="0.9" />
+      <circle cx="18" cy="17" r="1.1" fill="white" fillOpacity="0.95" />
+
+      {/* Bold Aboriginal dot patterns - Right arm */}
+      <circle cx="29" cy="13" r="1.2" fill="white" fillOpacity="0.95" />
+      <circle cx="25" cy="15" r="0.9" fill="white" fillOpacity="0.9" />
+      <circle cx="22" cy="17" r="1.1" fill="white" fillOpacity="0.95" />
+
+      {/* Traditional line patterns - more prominent */}
+      <path
+        d="M9 14 L13 12 M16 16 L17 15"
+        stroke="white"
+        strokeWidth="1.2"
+        strokeOpacity="0.8"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M31 14 L27 12 M24 16 L23 15"
+        stroke="white"
+        strokeWidth="1.2"
+        strokeOpacity="0.8"
+        strokeLinecap="round"
+      />
+
+      {/* Accent dots for visual appeal */}
+      <circle cx="12" cy="14.5" r="0.4" fill={accentColor} fillOpacity="0.9" />
+      <circle cx="16.5" cy="16.5" r="0.4" fill={accentColor} fillOpacity="0.9" />
+      <circle cx="28" cy="14.5" r="0.4" fill={accentColor} fillOpacity="0.9" />
+      <circle cx="23.5" cy="16.5" r="0.4" fill={accentColor} fillOpacity="0.9" />
     </svg>
   );
 
