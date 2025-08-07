@@ -134,13 +134,12 @@ export const getBoomerangLogoSVG = (theme: 'light' | 'dark' = 'light', size: num
 
   return `
     <svg viewBox="0 0 40 40" width="${size}" height="${size}" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M8 14 Q12 10, 18 12 Q22 14, 20 20 Q18 26, 12 28 Q8 30, 6 26 Q8 22, 12 20 Q16 18, 18 16 Q16 14, 12 16 Q10 18, 8 14 Z" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M26 8 Q30 6, 34 12 Q36 16, 32 20 Q28 22, 22 20 Q18 18, 20 14 Q22 10, 26 8 Z" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M10 16 Q14 14, 16 18" stroke="white" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-      <path d="M28 12 Q30 10, 32 14" stroke="white" stroke-width="1" stroke-opacity="0.6" stroke-linecap="round"/>
-      <circle cx="14" cy="24" r="1.5" fill="${accentColor}" fill-opacity="0.4"/>
-      <circle cx="26" cy="26" r="1" fill="${accentColor}" fill-opacity="0.6"/>
-      <circle cx="30" cy="22" r="0.8" fill="${accentColor}" fill-opacity="0.8"/>
+      <path d="M8 20 L18 12 Q20 11, 22 12 L32 8 Q34 7, 36 9 Q37 11, 35 13 L25 17 Q23 18, 22 20 Q21 22, 23 23 L33 27 Q35 28, 34 30 Q32 32, 30 31 L20 27 Q18 26, 18 24 L8 32 Q6 33, 5 31 Q4 29, 6 28 L16 20 Q18 18, 18 16 Q18 14, 16 14 Q14 14, 12 16 L8 20 Z" fill="${primaryColor}" stroke="${primaryColor}" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 22 Q15 16, 20 18 Q25 20, 30 16" stroke="white" stroke-width="0.8" stroke-opacity="0.3" stroke-linecap="round" fill="none"/>
+      <path d="M12 26 Q17 20, 22 22 Q27 24, 32 20" stroke="white" stroke-width="0.6" stroke-opacity="0.2" stroke-linecap="round" fill="none"/>
+      <path d="M35 10 Q28 4, 20 8 Q12 12, 8 20 Q6 28, 12 32" stroke="${accentColor}" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round" fill="none" stroke-dasharray="2 3"/>
+      <circle cx="32" cy="12" r="1" fill="${accentColor}" fill-opacity="0.6"/>
+      <circle cx="28" cy="8" r="0.8" fill="${accentColor}" fill-opacity="0.8"/>
     </svg>
   `;
 };
