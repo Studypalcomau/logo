@@ -25,57 +25,11 @@ const BoomerangLogo: React.FC<BoomerangLogoProps> = ({
   const textColor = theme === 'light' ? '#1F2937' : '#F9FAFB';
 
   const LogoIcon = () => (
-    <svg
-      viewBox="0 0 40 40"
-      className={`${sizeClasses[size]} w-auto`}
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* Authentic curved boomerang - Left arm (smooth upward curve like reference) */}
-      <path
-        d="M20 30 Q14 26, 10 20 Q8 14, 6 10 Q5 8, 4 8 Q2 8, 3 10 Q5 16, 12 24 Q16 28, 20 30"
-        fill={primaryColor}
-        stroke={primaryColor}
-        strokeWidth="0.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-
-      {/* Authentic curved boomerang - Right arm (smooth upward curve) */}
-      <path
-        d="M20 30 Q26 26, 30 20 Q32 14, 34 10 Q35 8, 36 8 Q38 8, 37 10 Q35 16, 28 24 Q24 28, 20 30"
-        fill={primaryColor}
-        stroke={primaryColor}
-        strokeWidth="0.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-
-      {/* Aboriginal dot painting patterns - Left arm (red/yellow style like reference) */}
-      <circle cx="8" cy="15" r="1.2" fill="#DC2626" fillOpacity="0.9" />
-      <circle cx="10" cy="18" r="0.8" fill="#FBBF24" fillOpacity="0.9" />
-      <circle cx="12" cy="21" r="1" fill="white" fillOpacity="0.9" />
-      <circle cx="14" cy="24" r="0.9" fill="#DC2626" fillOpacity="0.9" />
-      <circle cx="16" cy="26" r="0.7" fill="#FBBF24" fillOpacity="0.9" />
-
-      {/* Aboriginal dot painting patterns - Right arm */}
-      <circle cx="32" cy="15" r="1.2" fill="#DC2626" fillOpacity="0.9" />
-      <circle cx="30" cy="18" r="0.8" fill="#FBBF24" fillOpacity="0.9" />
-      <circle cx="28" cy="21" r="1" fill="white" fillOpacity="0.9" />
-      <circle cx="26" cy="24" r="0.9" fill="#DC2626" fillOpacity="0.9" />
-      <circle cx="24" cy="26" r="0.7" fill="#FBBF24" fillOpacity="0.9" />
-
-      {/* Traditional Aboriginal connecting dots */}
-      <circle cx="9" cy="16.5" r="0.4" fill="white" fillOpacity="0.8" />
-      <circle cx="11" cy="19.5" r="0.4" fill="#DC2626" fillOpacity="0.8" />
-      <circle cx="13" cy="22.5" r="0.4" fill="white" fillOpacity="0.8" />
-      <circle cx="15" cy="25" r="0.4" fill="#FBBF24" fillOpacity="0.8" />
-
-      <circle cx="31" cy="16.5" r="0.4" fill="white" fillOpacity="0.8" />
-      <circle cx="29" cy="19.5" r="0.4" fill="#DC2626" fillOpacity="0.8" />
-      <circle cx="27" cy="22.5" r="0.4" fill="white" fillOpacity="0.8" />
-      <circle cx="25" cy="25" r="0.4" fill="#FBBF24" fillOpacity="0.8" />
-    </svg>
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets%2Fdd7cf42c421a43aeaebe1762f190d508%2F9322846fc88647689b814181a06af82a?format=webp&width=800"
+      alt="Boomerang"
+      className={`${sizeClasses[size]} w-auto object-contain`}
+    />
   );
 
   const LogoText = () => (
